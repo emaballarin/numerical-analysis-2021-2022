@@ -493,7 +493,7 @@ def backward_euler_method(
     assert nsteps > 1
 
     # Numpy-ify
-    tbounds = np.asarray(tbounds)
+    tbounds: NDArray = np.asarray(tbounds)
     f_tx, fprime_tx = map(np.vectorize, [f_tx, fprime_tx])
 
     time: NDArray = np.linspace(tbounds[0], tbounds[-1], nsteps)
