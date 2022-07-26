@@ -20,8 +20,8 @@
 # Eventually-updated code available [on GitHub](https://github.com/emaballarin/numerical-analysis-2021-2022/tree/main/final_project) or [mirrored on SourceHut](https://git.sr.ht/~emaballarin/numerical-analysis-2021-2022/tree/main/item/final_project).
 
 # %% [markdown]
-# **NOTE:**  
-# The following *Jupyter Notebook* serves the purpose of *presentation* only.  
+# **NOTE:**
+# The following *Jupyter Notebook* serves the purpose of *presentation* only.
 # Numerics-related functions have been implemented in [functions.py](./functions.py) whereas [util.py](./util.py) contains generic utilities unrelated to Numerical Analysis (mostly: plotting).
 
 # %%
@@ -100,7 +100,7 @@ bc_new = [0, 0]
 
 # %%
 min_n = 3
-max_n = int(1e3)
+max_n = int(0.8 * 1e3)
 step_n = 10
 err_linf = []
 
@@ -152,26 +152,26 @@ from functions import conjugate_gradient
 #
 # Use the same finite difference scheme to derive the semi-discrete formulation and solve it using a forward Euler's method.
 #
-# Plot the time dependent solution solution at $x = \pi/2$, $x=1$, 
+# Plot the time dependent solution solution at $x = \pi/2$, $x=1$,
 # $x=\pi$
 #
 
 # %% [markdown]
 # **SOLUTION STEPS:**
 #
-# - Apply the *Forward Euler* 1st-order-time-derivative approximation:  
+# - Apply the *Forward Euler* 1st-order-time-derivative approximation:
 #   $$ \frac{\partial u}{\partial t} (x, t) \approx  \frac{u(x, t_{n+1} ) - u (x, t_n)}{h_t} $$
 #
-# - Rewrite the PDE solution accordingly:  
+# - Rewrite the PDE solution accordingly:
 #   $$ u(x, t_{n+1} ) = u (x, t_n) + h_t \ u_{xx}(x, t_n) + h_t \ \alpha (t_n) \ f (x) $$
 #
-# - Apply the space-approximation suggested before, as requested, i.e.:  
+# - Apply the space-approximation suggested before, as requested, i.e.:
 #   $$ u_{xx}(t, x_i) = \frac{-u(t, x_{i-2})+16 u(t, x_{i-1})-30 u(t, x_{i})+16 u(t, x_{i+1})-u(t, x_{i+2})}{12h_{x}^2} $$
 #   A 2nd-order space-discretization scheme will be used for the (space-)discretization points where a 4th-order scheme is not applicable, as we did for the previous exercise, i.e.:
 #   $$u_{xx}(t,x_{i})=\frac{u(t,x_{i-1})-2u(t,x_{i})+u(t,x_{i+1})}{h_{x}^{2}} $$
 #
-# - Substitute and rearrange the terms (for the 4th-order scheme):  
-#   $$ u(x_i, t_{n+1} ) =   h_t  \frac{-u(x_{i-2},t_n)+16u(x_{i-1}, t_n)+(-30 + 12 h_x^2/h_t) u(x_i, t_n)+16u(x_{i+1}, t_n) -u (x_{i+2}, t_n)}{12h_x^2} + h_t \alpha (t_n) f (x_i) $$  
+# - Substitute and rearrange the terms (for the 4th-order scheme):
+#   $$ u(x_i, t_{n+1} ) =   h_t  \frac{-u(x_{i-2},t_n)+16u(x_{i-1}, t_n)+(-30 + 12 h_x^2/h_t) u(x_i, t_n)+16u(x_{i+1}, t_n) -u (x_{i+2}, t_n)}{12h_x^2} + h_t \alpha (t_n) f (x_i) $$
 #   And analogously for the 2-nd order scheme.
 #
 #

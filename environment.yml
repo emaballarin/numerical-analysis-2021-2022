@@ -1,0 +1,19 @@
+name: ipd
+
+channels:
+  - intel
+  - nvidia
+  - numba
+  - defaults
+  - conda-forge
+
+dependencies:
+  - intelpython3_core
+  - python=3.9
+  - numpy
+  - scipy
+  - pandas
+  - numba
+  - matplotlib
+  - mkl-service
+  - jupyter

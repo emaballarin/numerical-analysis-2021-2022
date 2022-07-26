@@ -86,7 +86,6 @@ def chol_decomp(a: NDArray) -> Tuple[NDArray, NDArray]:
     return np.transpose(l), l
 
 
-# Forward & Backward substitution
 def l_solve(l: NDArray, rhs: NDArray) -> NDArray:
     ldim: int = len(l)
 
