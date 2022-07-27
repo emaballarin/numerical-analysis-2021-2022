@@ -1,6 +1,6 @@
 ## Final project
 
-Run on *Binder*! [![Binder](https://mybinder.org/v2/gh/emaballarin/numerical-analysis-2021-2022/HEAD?labpath=final_project%2FEBallarin_FinalProject_2021_2022.ipynb)
+Run on *Binder*! [![Binder](https://mybinder.org/v2/gh/emaballarin/numerical-analysis-2021-2022/HEAD?labpath=final_project%2FEBallarin_FinalProject_2021_2022.ipynb)]
 
 ---
 
