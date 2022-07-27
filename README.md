@@ -1,3 +1,10 @@
+## Final project
+
+Run on *Binder*!
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/git@github.com:emaballarin/numerical-analysis-2021-2022.git/HEAD?labpath=final_project%2FEBallarin_FinalProject_2021_2022.ipynb)
+
+---
+
  [![Creative Commons License](http://mirrors.creativecommons.org/presskit/logos/cc.logo.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 # Applied Mathematics: an Introduction to Scientific Computing
@@ -34,6 +41,7 @@ https://github.com/luca-heltai/numerical-analysis-2021-2022 (this github reposit
 If you are following the course, please (FILL THIS FORM)[https://forms.gle/8DyESWnfCmXMei3h8].
 
 # Syllabus 2021-2022
+
 Four Modules of 12h each (1.5 CFU for each module), for a total of 48h, 6 CFU
 
 ## Frontal Lectures
@@ -42,7 +50,7 @@ Four Modules of 12h each (1.5 CFU for each module), for a total of 48h, 6 CFU
 
 - Well posedness, condition numbers
 - Polynomial based approximations
-  - Power basis interpolation, 
+  - Power basis interpolation,
   - Lagrange interpolation
   - Weierstrass approximation theorem)
 - Interpolatory Quadrature rules
