@@ -1,7 +1,7 @@
 ## Final project
 
 Run on *Binder*!
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/git@github.com:emaballarin/numerical-analysis-2021-2022.git/HEAD?labpath=final_project%2FEBallarin_FinalProject_2021_2022.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/git@github.com:emaballarin/numerical-analysis-2021-2022.git?labpath=final_project%2FEBallarin_FinalProject_2021_2022.ipynb)
 
 ---
 
